@@ -2,7 +2,7 @@ from jose import jwt
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 
-SECRET_KEY = "sua_chave_secreta_aqui"
+SECRET_KEY = 'postgresql://neondb_owner:npg_nrBGcb1aqu2T@ep-rapid-cell-apc922g9-pooler.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
 ALGORITHM = "HS256"
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
