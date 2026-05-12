@@ -2,10 +2,7 @@ import streamlit as st
 import requests
 import os
 
-# API_URL = os.getenv("API_URL", "http://127.0.0.1:8000")
-
-# API_URL = "[https://app-crud-gtob.onrender.com](https://app-crud-gtob.onrender.com)"
-API_URL = os.getenv("API_URL", "[https://app-crud-gtob.onrender.com](https://app-crud-gtob.onrender.com)")
+API_URL = "https://app-crud-gtob.onrender.com"
 
 st.set_page_config(page_title="Biblioteca Digital", layout="wide")
 
