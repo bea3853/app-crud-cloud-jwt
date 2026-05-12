@@ -2,7 +2,7 @@ from jose import jwt
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 
-SECRET_KEY = '3bba4b176f9a80420c6dd6636e97ec892fa77e4cecad60baf5404fde0c60c07a'
+SECRET_KEY = 'app/controllers/auth.py'
 ALGORITHM = "HS256"
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
