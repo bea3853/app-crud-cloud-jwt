@@ -7,8 +7,9 @@ from datetime import datetime, timedelta
 SECRET_KEY = os.getenv("SECRET_KEY", "chave_temporaria_para_testes_locais")
 ALGORITHM = "HS256"
 
-# Configuração que evita o bug do bcrypt em versões novas do Python
-# Esta configuração ignora o erro de 72 bytes e força a compatibilidade
+# configuração que evita o bug do bcrypt em versões novas do Python
+# rsta configuração ignora o erro de 72 bytes e força a compatibilidade
+# ignora o erro de compatibilidade do bcrypt
 pwd_context = CryptContext(
     schemes=["bcrypt"], 
     deprecated="auto", 
